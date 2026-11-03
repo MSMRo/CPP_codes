@@ -70,3 +70,12 @@ arduino-cli compile --fqbn esp32:esp32:esp32 04_Modern_CPP_Versions_Embedded/02_
 2. **Costo Cero**: Usar el compilador para hacer el trabajo pesado antes de que el microcontrolador despierte.
 3. **Seguridad de Tipos**: Usar `stdint.h` (`uint8_t`, `int16_t`, `uint32_t`) en lugar de `int` o `long` genéricos cuyos tamaños varían entre arquitecturas de 8 y 32 bits.
 4. **Cero Heap Innecesario**: Evitar la fragmentación de la memoria SRAM prescindiendo de llamadas arbitrarias a `malloc` o `new` en tiempo de ejecución.
+
+
+## Programar usando arduino-cli
+
+```bash
+    $ arduino-cli compile --fqbn arduino:mbed:nano33ble -e segment01/segment01.ino   
+    $ arduino-cli upload -p COM4 --fqbn arduino:mbed:nano33ble segment01/segment01.ino
+
+```
