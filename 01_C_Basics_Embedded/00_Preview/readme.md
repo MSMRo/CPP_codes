@@ -315,7 +315,7 @@ Es el identificador único y estandarizado que utiliza el ecosistema de Arduino 
 
 1. Estructura base de un FQBNLa sintaxis obligatoria se compone de tres campos separados por dos puntos:
 
-$$\text{vendor} : \text{architecture} : \text{board\_id}$$
+$$ \text{vendor} : \text{architecture} : \text{board_id} $$
 
 - Vendor (fabricante / mantenedor): La entidad o comunidad que mantiene el soporte (por ejemplo, arduino, esp32, rp2040).
 - Architecture (familia de procesador): La arquitectura de CPU del paquete (por ejemplo, avr, mbed_nano, megaavr).
@@ -330,4 +330,6 @@ Ejemplos comunes:
 - esp32:esp32:esp32 $\rightarrow$ ESP32 Dev Module genérico.
 - rp2040:rp2040:rpipico $\rightarrow$ Raspberry Pi Pico con el core de Earle Philhower.
 
-2. Parámetros de menú y variantes de configuraciónMuchas placas físicas tienen subvariantes de procesador, frecuencias de reloj, esquemas de partición o tipos de flash. El FQBN permite configurar estas opciones anexándolas con dos puntos ``:`` y pares ``clave=valor`` separados por comas:$$\text{vendor} : \text{architecture} : \text{board\_id} : \mathbf{opcion1=valor1,opcion2=valor2}$$
+2. Parámetros de menú y variantes de configuraciónMuchas placas físicas tienen subvariantes de procesador, frecuencias de reloj, esquemas de partición o tipos de flash. El FQBN permite configurar estas opciones anexándolas con dos puntos ``:`` y pares ``clave=valor`` separados por comas:
+
+$$\text{vendor} : \text{architecture} : \text{board\_id} : \mathbf{opcion1=valor1,opcion2=valor2}$$
